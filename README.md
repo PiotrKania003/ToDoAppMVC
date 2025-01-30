@@ -55,7 +55,7 @@ Installation and Running:
   dotnet run
 
 
-5. Open in the browser at: http://localhost:5000
+5. Open in the browser at: http://localhost:5000/Tasks
 
 
 
