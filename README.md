@@ -6,9 +6,13 @@ Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwi
 🚀 Funkcje
 
 ✅ Wyświetlanie listy zadań
+
 ✅ Oznaczanie zadań jako ukończone
+
 ✅ Dodawanie nowych zadań
+
 ✅ Edytowanie istniejących zadań
+
 ✅ Usuwanie zadań
 
 
