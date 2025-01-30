@@ -28,7 +28,7 @@
 
 ⚡ Instalacja i uruchomienie
 
-    1. Sklonuj repozytorium: 
+    1. Sklonuj repozytorium 
     git clone https://github.com/PiotrKania003/ToDoAppMVC
     cd task-manager
 
