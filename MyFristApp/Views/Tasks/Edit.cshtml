@@ -1,38 +1,40 @@
 ﻿@model MyFristApp.Models.TaskViewModel
 @{
-	ViewData["Title"] = "Skończyłeś?";
+	ViewData["Title"] = "Have you finished?";
 }
 
-<h2>Skończyłeś?</h2>
+<h2>Have you finished?</h2>
 
 <form asp-action="Edit" method="post">
 	<div class="form-group">
-		<label for="Name">Nazwa</label>
+		<label for="Name">Name</label>
 		<input type="text" asp-for="Name" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="Description">Opis</label>
+		<label for="Description">Description</label>
 		<input type="text" asp-for="Description" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="ClassName">Zajęcia</label>
+		<label for="ClassName">Classes</label>
 		<select class="form-select" asp-for="ClassName">
-			<option>HTML</option>
-			<option>JAVA</option>
-			<option>LINUX</option>
-			<option>SIECI</option>
+			<option>Html</option>
+			<option>Java</option>
+			<option>Linux</option>
+			<option>Databases</option>
+			<option>Math</option>
+			<option>Internet Network</option>
 		</select>
 	</div>
 	<div class="form-group">
-		<label for="Deadline">Do kiedy?</label>
+		<label for="Deadline">Deadline</label>
 		<input type="date" asp-for="Deadline" class="form-control" />
 	</div>
 	<div class="form-check">
-		<label for="IsCompleted">Skończone?</label>
+		<label for="IsCompleted">Is completed?</label>
 		<input type="checkbox" asp-for="IsCompleted" class="form-check-input" />
 	</div>
-	<button type="submit" class="btn btn-primary">Edytuj</button>
+	<button type="submit" class="btn btn-primary">Edit</button>
 </form>
 <form asp-action="Index" method="get">
-	<button type="submit" class="btn btn-primary">Wróć</button>
+	<button type="submit" class="btn btn-primary">Back</button>
 </form>

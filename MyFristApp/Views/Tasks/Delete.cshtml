@@ -1,15 +1,15 @@
 ﻿@model MyFristApp.Models.TaskViewModel
 @{
-	ViewData["Title"] = "USUWANKO!";
+	ViewData["Title"] = "You sure u want to delete?";
 }
 
-<h2>Serio usuwasz?</h2>
+<h2>Are you sure?</h2>
 
-<p>Nazwa: @Model.Name</p>
-<p>Opis: @Model.Description</p>
-<p>Skończone: @Model.IsCompleted</p>
+<p>Name: @Model.Name</p>
+<p>Description: @Model.Description</p>
+<p>Is done?: @Model.IsCompleted</p>
 
 <form asp-action="Deleted" method="post">
 	<input type="hidden" asp-for="Id" />
-	<button class="btn btn-danger">Usuń</button>
+	<button class="btn btn-danger">Delete</button>
 </form>

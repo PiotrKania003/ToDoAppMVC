@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyFristApp.Data;
 using MyFristApp.Models;
+using System;
 
 namespace MyFristApp.Controllers
 {
@@ -78,18 +79,37 @@ namespace MyFristApp.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Finished(int id)
-		{
-			var task = await _appContext.Tasks.FirstOrDefaultAsync(x => x.Id == id);
+		public async Task<IActionResult> Finish(List<int> ids) 
+		{ 
+			var tasks = await _appContext.Tasks.Where(x => ids.Contains(x.Id)).ToListAsync();
+			foreach(var task in tasks) { 
+				if (task != null)
+				{
+					task.IsCompleted = true;
+					_appContext.Update(task);
+				}
+}
 
-			if (task != null)
-			{
-				task.IsCompleted = true;
-				_appContext.Update(task);
-				await _appContext.SaveChangesAsync();
+			await _appContext.SaveChangesAsync();
+
+			return RedirectToAction("Index");
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> NotFinish(List<int> ids)
+		{
+			var tasks = await _appContext.Tasks.Where(x => ids.Contains(x.Id)).ToListAsync();
+			foreach(var task in tasks) { 
+				if (task != null)
+				{
+					task.IsCompleted = false;
+					_appContext.Update(task);
+				}
 			}
-			
-			return RedirectToAction("Finished");
+
+			await _appContext.SaveChangesAsync();
+
+			return RedirectToAction("Index");
 		}
 	}
 }

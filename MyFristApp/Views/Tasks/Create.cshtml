@@ -1,35 +1,36 @@
 ﻿@model MyFristApp.Models.TaskViewModel
 @{
-	ViewData["Title"] = "Jakie zadanko wariacie?";
+	ViewData["Title"] = "What do we have to do?";
 }
 
-<h2>Co tam mamy do zrobienia?</h2>
+<h2>What do we have to do?</h2>
 
 <form asp-action="Create" method="post">
 	<div class="form-group">
-		<label for="Name">Nazwa</label>
+		<label for="Name">Name</label>
 		<input type="text" asp-for="Name" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="Description">Opis</label>
+		<label for="Description">Description</label>
 		<input type="text" asp-for="Description" class="form-control" />
 	</div>
 	<div class="form-group">
-		<label for="ClassName">Zajęcia</label>
+		<label for="ClassName">Classes</label>
 		<select class="form-select" asp-for="ClassName">
-			<option>HTML</option>
-			<option>JAVA</option>
-			<option>LINUX</option>
-			<option>SIECI</option>
-			<option>Zieleń w przestrzeni zurbanizowanej</option>
+			<option>Html</option>
+			<option>Java</option>
+			<option>Linux</option>
+			<option>Databases</option>
+			<option>Math</option>
+			<option>Internet Network</option>
 		</select>
 	</div>
 	<div class="form-group">
-		<label for="Deadline">Do kiedy?</label>
+		<label for="Deadline">Deadline</label>
 		<input type="date" asp-for="Deadline" class="form-control" />
 	</div>
-	<button type="submit" class="btn btn-primary">Dodaj</button>
+	<button type="submit" class="btn btn-primary">Add</button>
 </form>
 <form asp-action="Index" method="get">
-	<button type="submit" class="btn btn-primary">Wróć</button>
+	<button type="submit" class="btn btn-primary">Back</button>
 </form>
