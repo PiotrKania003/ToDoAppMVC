@@ -1,19 +1,19 @@
 📌 Task Manager
 
-Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwia dodawanie, edytowanie, usuwanie i oznaczanie zadań jako ukończone.
+    Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwia dodawanie, edytowanie, usuwanie i oznaczanie zadań jako ukończone.
 
 
 🚀 Funkcje
 
-✅ Wyświetlanie listy zadań
+    ✅ Wyświetlanie listy zadań
 
-✅ Oznaczanie zadań jako ukończone
+    ✅ Oznaczanie zadań jako ukończone
 
-✅ Dodawanie nowych zadań
+    ✅ Dodawanie nowych zadań
 
-✅ Edytowanie istniejących zadań
+    ✅ Edytowanie istniejących zadań
 
-✅ Usuwanie zadań
+    ✅ Usuwanie zadań
 
 
 🛠 Technologie
@@ -26,7 +26,7 @@ Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwi
     SQL Server (baza danych)
 
 
-    ⚡ Instalacja i uruchomienie
+⚡ Instalacja i uruchomienie
 
     1. Sklonuj repozytorium: 
     git clone https://github.com/PiotrKania003/ToDoAppMVC
@@ -45,7 +45,7 @@ Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwi
     http://localhost:5000
 
 
-    📌 Struktura projektu
+📌 Struktura projektu
 
     Controllers/ – kontrolery MVC
     Models/ – modele danych
@@ -53,8 +53,8 @@ Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwi
     wwwroot/ – statyczne pliki (CSS, JS)
 
 
-    📜 Licencja
+📜 Licencja
 
     Ten projekt jest udostępniony na licencji MIT.
 
-    🎯 Autor: Piotr Kania 🚀
+🎯 Autor: Piotr Kania 🚀
