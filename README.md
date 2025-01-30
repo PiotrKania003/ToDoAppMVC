@@ -1,60 +1,80 @@
-📌 Task Manager
 
-    Task Manager to prosta aplikacja webowa do zarządzania listą zadań. Umożliwia dodawanie, edytowanie, usuwanie i oznaczanie zadań jako ukończone.
+Task Manager
 
+Task Manager is a simple web application for managing a task list. It allows you to add, edit, delete, and mark tasks as completed.
 
-🚀 Funkcje
+Features:
 
-    ✅ Wyświetlanie listy zadań
+✅ Display task list
 
-    ✅ Oznaczanie zadań jako ukończone
+✅ Mark tasks as completed
 
-    ✅ Dodawanie nowych zadań
+✅ Add new tasks
 
-    ✅ Edytowanie istniejących zadań
+✅ Edit existing tasks
 
-    ✅ Usuwanie zadań
-
-
-🛠 Technologie
-
-    ASP.NET Core MVC
-    Entity Framework Core
-    Blazor
-    Razor Pages
-    Bootstrap (UI)
-    SQL Server (baza danych)
+✅ Delete tasks
 
 
-⚡ Instalacja i uruchomienie
+Technologies:
 
-    1. Sklonuj repozytorium 
-    git clone https://github.com/PiotrKania003/ToDoAppMVC
-    cd task-manager
+ASP.NET Core MVC
 
-    2. Zainstaluj zależności
-    dotnet restore
+Entity Framework Core
 
-    3. Utwórz bazę danych i zastosuj migracje
-    dotnet ef database update
+Blazor
 
-    4. Uruchom aplikację
-    dotnet run
+Razor Pages
 
-    5. Otwórz w przeglądarce
-    http://localhost:5000
+Bootstrap (UI)
+
+SQL Server (database)
 
 
-📌 Struktura projektu
+Installation and Running:
 
-    Controllers/ – kontrolery MVC
-    Models/ – modele danych
-    Views/ – pliki Razor Pages
-    wwwroot/ – statyczne pliki (CSS, JS)
+1. Clone the repository
+
+git clone https://github.com/PiotrKania003/ToDoAppMVC
+cd task-manager
 
 
-📜 Licencja
+2. Install dependencies
 
-    Ten projekt jest udostępniony na licencji MIT.
+dotnet restore
 
-🎯 Autor: Piotr Kania 🚀
+
+3. Create the database and apply migrations
+
+dotnet ef database update
+
+
+4. Run the application
+
+dotnet run
+
+
+5. Open in the browser at: http://localhost:5000
+
+
+
+Project Structure:
+
+Controllers/ – MVC controllers
+
+Models/ – Data models
+
+Views/ – Razor Pages files
+
+wwwroot/ – Static files (CSS, JS)
+
+
+License: This project is licensed under the MIT license.
+
+Author: Piotr Kania
+
+
+---
+
+You can now copy and use this translated text in your README file.
+
