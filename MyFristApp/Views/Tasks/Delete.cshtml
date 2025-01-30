@@ -1,0 +1,15 @@
+﻿@model MyFristApp.Models.TaskViewModel
+@{
+	ViewData["Title"] = "USUWANKO!";
+}
+
+<h2>Serio usuwasz?</h2>
+
+<p>Nazwa: @Model.Name</p>
+<p>Opis: @Model.Description</p>
+<p>Skończone: @Model.IsCompleted</p>
+
+<form asp-action="Deleted" method="post">
+	<input type="hidden" asp-for="Id" />
+	<button class="btn btn-danger">Usuń</button>
+</form>
