@@ -1,57 +1,58 @@
 
 Task Manager
 
-Task Manager is a simple web application for managing a task list. It allows you to add, edit, delete, and mark tasks as completed.
+  Task Manager is a simple web application for managing a task list. It allows you to add, edit, delete, and mark tasks as completed.
 
 Features:
 
-✅ Display task list
+  ✅ Display task list
 
-✅ Mark tasks as completed
+  ✅ Mark tasks as completed
 
-✅ Add new tasks
+  ✅ Add new tasks
 
-✅ Edit existing tasks
+  ✅ Edit existing tasks
 
-✅ Delete tasks
+  ✅ Delete Tasks
 
 
 Technologies:
 
-ASP.NET Core MVC
+  ASP.NET Core MVC
 
-Entity Framework Core
+  Entity Framework Core
 
-Blazor
+  Blazor
 
-Razor Pages
+  Razor Pages
 
-Bootstrap (UI)
+  Bootstrap (UI)
 
-SQL Server (database)
+  SQL Server (database)
 
 
 Installation and Running:
 
-1. Clone the repository
+ 1. Clone the repository
 
-git clone https://github.com/PiotrKania003/ToDoAppMVC
-cd task-manager
+  git clone https://github.com/PiotrKania003/ToDoAppMVC
+
+  cd task-manager
 
 
 2. Install dependencies
 
-dotnet restore
+  dotnet restore
 
 
 3. Create the database and apply migrations
 
-dotnet ef database update
+  dotnet ef database update
 
 
 4. Run the application
 
-dotnet run
+  dotnet run
 
 
 5. Open in the browser at: http://localhost:5000
@@ -60,21 +61,17 @@ dotnet run
 
 Project Structure:
 
-Controllers/ – MVC controllers
+  Controllers/ – MVC controllers
 
-Models/ – Data models
+  Models/ – Data models
 
-Views/ – Razor Pages files
+  Views/ – Razor Pages files
 
-wwwroot/ – Static files (CSS, JS)
+  wwwroot/ – Static files (CSS, JS)
 
 
-License: This project is licensed under the MIT license.
+License:
+  This project is licensed under the MIT license.
 
 Author: Piotr Kania
-
-
----
-
-You can now copy and use this translated text in your README file.
 
